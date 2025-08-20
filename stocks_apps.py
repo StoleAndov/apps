@@ -1,4 +1,3 @@
-import plotly_express as px
 import yfinance as yf
 from prophet import Prophet
 from prophet.plot import plot_plotly
@@ -57,3 +56,4 @@ fig1 = plot_plotly(m, forecast)
 st.plotly_chart(fig1)
 fig1.update_xaxes(title_text = 'Future Time')
 fig1.update_yaxes(title_text = 'Price_Forecast')
+
